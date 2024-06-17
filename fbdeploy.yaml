@@ -30,6 +30,13 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 2020
+        env:
+        - name: AWS_ACCESS_KEY_ID
+          value: "DO00Z9HEJHJGT3744X47"
+        - name: AWS_SECRET_ACCESS_KEY
+          value: "Fd9TE2/ePjcNNWKv6h7ayfu0Zaw56h10chogPhgtutQ"
+        - name: AWS_ENDPOINT_URL
+          value: "blr1.digitaloceanspaces.com"
         volumeMounts:
         - name: varlog
           mountPath: /var/log
